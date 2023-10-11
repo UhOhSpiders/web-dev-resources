@@ -4,6 +4,17 @@ import NavBar from './components/NavBar'
 import ResourceList from './components/ResourceList'
 import temp_data from './temp_data'
 import temp_data_categories from './temp_data_categories'
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://rczlpbrswmmgbteefilv.supabase.co'
+const supabaseKey = import.meta.env.VITE_SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+
+let { data: categoryItems, error } = await supabase
+  .from('categories')
+  .select('*')
+
 
 function App() {
   const [data, setData] = useState(0)
@@ -15,7 +26,7 @@ useEffect(() => {
 
   const loadData = () => {
     setData(temp_data.resources)
-    setCategories(temp_data_categories.categories)
+    setCategories(categoryItems)
   }
 
   if(!data){
@@ -29,11 +40,11 @@ useEffect(() => {
       return el.category_ids.includes(category.id)
   }
   )
-    return <Route path={category.category_name} element={<ResourceList data={pageData}/>}/>
+    return <Route key={category.id} path={category.name} element={<ResourceList data={pageData}/>}/>
   })
 
   const navLinks = categories.map((category, index) => {
-    return <Link key={index} to={category.category_name}><h1>{category.category_name}</h1></Link>
+    return <Link key={index} to={category.name}><h1>{category.name}</h1></Link>
   })
 
   return (
