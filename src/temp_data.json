@@ -4,24 +4,24 @@
 "title":"CSS resource 1",
 "url":"https://www.realtimecolors.com/",
 "description":"A handy tool to quickly visualize colour palettes for your website.",
-"category_ids": [0, 1]
+"category_ids": [0]
 },{"id": 1,
 "title":"CSS resource 2",
 "url":"https://www.realtimecolors.com/",
 "description":"CSS resource 2 description.",
-"category_ids": [0, 1]
+"category_ids": [0]
 },
 {"id": 2,
-"title":"JS resource 1",
+"title":"JS & CSS resource 1",
 "url":"https://www.realtimecolors.com/",
-"description":"JS resource 1 description.",
-"category_ids": [0, 1]
+"description":"JS & CSS resource 1 description.",
+"category_ids": [0, 2]
 },
 {"id": 3,
-"title":"Python resource 1",
+"title":"Python & Javascript Resource 1",
 "url":"https://www.realtimecolors.com/",
-"description":"Python resource 1 description.",
-"category_ids": [2, 3]
+"description":"Python & JS resource 1 description.",
+"category_ids": [1, 2]
 }
 ]
 }
