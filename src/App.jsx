@@ -24,10 +24,16 @@ function App() {
   return (
     <>
       <Router>
-        <div>
-          <h1>Web Dev Resources</h1>
+        <div className="bg-slate-200 min-h-screen">
+          <h1 className="text-2xl underline text-green-600">Web Dev Resources</h1>
           <NavBar/>
-          <Routes>{routes}</Routes>
+          <Routes>
+            <Route
+        path="/"
+        element={<ResourceList data={resources} />}
+      />
+            {routes}
+            </Routes>
         </div>
       </Router>
     </>
