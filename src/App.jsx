@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import ResourceList from "./components/ResourceList";
 import { categories, resources } from "./backend";
@@ -24,16 +24,13 @@ function App() {
   return (
     <>
       <Router>
-        <div className="bg-slate-200 min-h-screen">
-          <h1 className="text-2xl underline text-green-600">Web Dev Resources</h1>
-          <NavBar/>
+        <div className="bg-red-200 min-h-screen">
+          
+          <NavBar />
           <Routes>
-            <Route
-        path="/"
-        element={<ResourceList data={resources} />}
-      />
+            <Route path="/" element={<ResourceList data={resources} />} />
             {routes}
-            </Routes>
+          </Routes>
         </div>
       </Router>
     </>
