@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import ResourceList from "./components/ResourceList";
+import About from "./components/About";
 import { categories, resources } from "./backend";
 
 function App() {
@@ -24,11 +25,12 @@ function App() {
   return (
     <>
       <Router>
-        <div className="bg-indigo-900 min-h-screen">
+        <div className="bg-gradient-to-r from-indigo-900 to-blue-400 min-h-screen">
           
           <NavBar />
           <Routes>
             <Route path="/" element={<ResourceList data={resources} />} />
+            <Route path="/about" element={<About/>} />
             {routes}
           </Routes>
         </div>
