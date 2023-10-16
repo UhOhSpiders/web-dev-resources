@@ -8,7 +8,7 @@ const ResourceList = ({data}) => {
   })
 
   return (
-    <div className='p-2 md:p-10'>
+    <div className='p-2 md:px-[20%] md:pt-10'>
       <ul>
       {resourceListItems}
       </ul>

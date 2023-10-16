@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="bg-red-200 min-h-screen">
+        <div className="bg-indigo-900 min-h-screen">
           
           <NavBar />
           <Routes>
