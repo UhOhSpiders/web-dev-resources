@@ -34,7 +34,7 @@ const NavBar = () => {
       <div className="p-4 px-20 bg-slate-900 sticky top-0 flex items-center justify-between z-10">
         <Link to="/">
           <h1 className="text-4xl underline text-indigo-50">
-            Web Dev Resources
+            Web Development Resources
           </h1>
         </Link>
 
