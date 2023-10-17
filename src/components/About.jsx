@@ -2,10 +2,12 @@ import React from "react";
 
 const About = () => {
 
-  const imageStyle = "h-full w-fit translate-y-1 hover:drop-shadow-2xl hover:translate-y-0"
+  const imageStyle = "h-full w-fit translate-y-1 transition hover:drop-shadow-2xl hover:translate-y-0 hover:transition"
+
+  const linkStyle = "underline hover:text-yellow-300 hover:transition"
 
   return (
-    <div className="flex justify-center text-center text-white text-2xl m-10">
+    <div className="flex justify-center text-center text-black text-2xl m-10">
       <div>
         <div className="flex h-60 w-full items-center justify-center mb-10">
           <img
@@ -25,21 +27,21 @@ const About = () => {
           This site is a collection of useful web development resources created
           with{" "}
           <a
-            className="underline hover:text-yellow-300"
+            className={linkStyle}
             href="https://supabase.com/"
           >
             Supabase
           </a>
           ,{" "}
           <a
-            className="underline hover:text-yellow-300"
+            className={linkStyle}
             href="https://tailwindcss.com/"
           >
             TailwindCSS
           </a>{" "}
           and{" "}
           <a
-            className="underline hover:text-yellow-300"
+            className={linkStyle}
             href="https://react.dev/"
           >
             React
@@ -50,7 +52,7 @@ const About = () => {
         <h2>
           Check out the GitHub repo{" "}
           <a
-            className="underline hover:text-yellow-300"
+            className={linkStyle}
             href="https://github.com/UhOhSpiders/web-dev-resources"
           >
             here
