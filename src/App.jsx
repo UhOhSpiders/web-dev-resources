@@ -26,7 +26,7 @@ function App() {
     <>
       <Router>
         <div 
-        className="bg-gradient-to-t from-indigo-200 to-blue-300 min-h-screen"
+        className="bg-gradient-to-t from-yellow-100 to-blue-300 min-h-screen"
         >
           
           <NavBar />
