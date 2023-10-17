@@ -4,7 +4,7 @@ const About = () => {
 
   const imageStyle = "h-full w-fit translate-y-1 transition hover:drop-shadow-2xl hover:translate-y-0 hover:transition"
 
-  const linkStyle = "underline hover:text-yellow-300 hover:transition"
+  const linkStyle = "underline hover:text-purple-700 hover:transition"
 
   return (
     <div className="flex justify-center text-center text-black text-2xl m-10">
