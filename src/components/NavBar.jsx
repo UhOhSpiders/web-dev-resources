@@ -23,7 +23,7 @@ const NavBar = () => {
         className={({ isActive }) =>
           isActive
             ? `bg-gradient-to-tr from-orange-400 to-yellow-300 ${navLinkStyle}`
-            : `bg-indigo-200 ${navLinkStyle}`
+            : `bg-indigo-100 ${navLinkStyle}`
         }
       >
         {category.name}
@@ -37,7 +37,7 @@ const NavBar = () => {
       className={({ isActive }) =>
         isActive
           ? `bg-gradient-to-tr from-orange-400 to-yellow-300 ${navLinkStyle}`
-          : `bg-indigo-200 ${navLinkStyle}`
+          : `bg-indigo-100 ${navLinkStyle}`
       }
     >
       <p>About</p>
@@ -46,13 +46,13 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="p-4 md:px-20 bg-slate-900 sticky top-0 flex justify-between items-center md:justify-center  z-10">
+      <div className="p-2 md:px-20 bg-slate-900 sticky top-0 flex justify-between items-center md:justify-center  z-10">
         <RiComputerLine
           size={40}
           className="fill-purple-500 mr-3 md:mr-6 md:flex-shrink-0"
         />
         <Link to="/" className="flex flex-wrap ">
-          <h1 className="md:text-4xl text-2xl text-transparent bg-clip-text bg-gradient-to-b from-purple-300 to-purple-500 mr-14">
+          <h1 className="text-3xl text-white mr-14">
             Web Development Resources
           </h1>
         </Link>

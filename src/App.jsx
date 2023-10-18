@@ -25,14 +25,11 @@ function App() {
   return (
     <>
       <Router>
-        <div 
-        className="bg-gradient-to-t from-yellow-100 to-blue-300 min-h-screen"
-        >
-          
+        <div className="bg-gradient-to-t from-yellow-100 to-blue-200 min-h-screen bg-fixed">
           <NavBar />
           <Routes>
             <Route path="/" element={<ResourceList data={resources} />} />
-            <Route path="/about" element={<About/>} />
+            <Route path="/about" element={<About />} />
             {routes}
           </Routes>
         </div>
