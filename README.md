@@ -1,5 +1,8 @@
 # Web Dev Resources
 
+![Screenshot 2023-10-18 at 12 14 09](https://github.com/UhOhSpiders/web-dev-resources/assets/78114230/28fc2f75-f0ef-4123-9ff0-b430b00776ec)
+![Screenshot 2023-10-18 at 12 14 44](https://github.com/UhOhSpiders/web-dev-resources/assets/78114230/1d6fa1f1-f8d6-49b0-bc9b-f2324377d860)
+
 ## About
 
 This is a react app created to provide a list of useful resources for web developers.
