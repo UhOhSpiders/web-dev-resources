@@ -1,8 +1,23 @@
-# React + Vite
+# Web Dev Resources
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+This is a react app created to provide a list of useful resources for web developers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built With
+
+* Javascript
+* Vite
+* Tailwind
+* Supabase
+* Vercel
+
+## Design Considerations
+
+The app interprets data from a PostreSQL database and renders it as clear lists of categorised resources. As more categories and resources are added to the database, the frontend updates accordingly, without the need for manual intervention.
+
+The app is also responsive and takes advantage of TailwidCSS utility classes to achieve this in a concise and maintainable way.
+
+## Deployment
+
+The site has been deployed through Vercel and can be accessed [here](https://web-dev-resources-red.vercel.app/). 
