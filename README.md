@@ -16,7 +16,7 @@ This is a react app created to provide a list of useful resources for web develo
 
 ## Design Considerations
 
-The app interprets data from a PostreSQL database and renders it as clear lists of categorised resources. As more categories and resources are added to the database, the frontend updates accordingly, without the need for manual intervention.
+The app interprets data from a PostgreSQL database and renders it as clear lists of categorised resources. As more categories and resources are added to the database, the frontend updates accordingly, without the need for manual intervention.
 
 The app is also responsive and takes advantage of TailwidCSS utility classes to achieve this in a concise and maintainable way.
 
