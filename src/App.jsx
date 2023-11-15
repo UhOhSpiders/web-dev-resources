@@ -6,7 +6,7 @@ import { categories, resources } from "./backend";
 
 function App() {
   if (!resources) {
-    return <p>loading...</p>;
+    return <p>Loading...</p>;
   }
 
   const routes = categories.map((category) => {
